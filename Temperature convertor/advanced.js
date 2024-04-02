@@ -57,3 +57,12 @@ inputTemperature.addEventListener('input', convertTemperature);
 fromScaleSelect.addEventListener('change', convertTemperature);
 toScaleSelect.addEventListener('change', convertTemperature);
 resetBtn.addEventListener('click', resetFields);
+
+document.getElementById('tipBtn').addEventListener('click', function() {
+  var noteContainer = document.getElementById('noteContainer');
+  if (noteContainer.style.display === 'block') {
+    noteContainer.style.display = 'none';
+  } else {
+    noteContainer.style.display = 'block';
+  }
+});
