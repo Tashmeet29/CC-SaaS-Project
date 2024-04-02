@@ -121,6 +121,7 @@
             top: 10px;
             right: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -168,35 +169,27 @@
               <input type="text" class="form-control" id="outputKelvin" readonly>
             </div>
           </div>
-  
-          <button id="resetBtn" class="btn btn-secondary">Reset</button>
-          <a href="index.html" class="btn btn-primary">Back to Simple Converter</a>
 
-          <!-- Tip Button -->
-          <button class="btn btn-primary note-btn" id="tipBtn">Tip</button>
-          <div class="note-container" id="noteContainer">
-            <div class="note-title">Temperature Tip</div>
-            <div class="note-content">
-              <p>Normal Body Temperature: <span style="color: #4CAF50;">36.5°C - 37.5°C</span></p>
-              <p>High Temperature (Fever): <span style="color: #FF5722;">Above 38°C</span></p>
-              <p>Low Temperature: <span style="color: #2196F3;">Below 35°C</span></p>
-              <p>If high fever or persistent low temperature, consult a doctor.</p>
-            </div>
-          </div>
+  
+        <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        <a href="index.html" class="btn btn-primary">Back to Simple Converter</a>
+         <!-- Tip Button -->
+         <button class="btn btn-primary note-btn" id="tipBtn">Tip</button>
+         <div class="note-container" id="noteContainer">
+           <div class="note-title">Temperature Tip</div>
+           <div class="note-content">
+             <p>Normal Body Temperature: <span style="color: #4CAF50;">36.5°C - 37.5°C</span></p>
+             <p>High Temperature (Fever): <span style="color: #FF5722;">Above 38°C</span></p>
+             <p>Low Temperature: <span style="color: #2196F3;">Below 35°C</span></p>
+             <p>If high fever or persistent low temperature, consult a doctor.</p>
+           </div>
+         </div>
+     </div>
       </div>
+
     </div>
   </div>
 
-  <script>
-    // Show/hide note container
-    document.getElementById('tipBtn').addEventListener('click', function() {
-      var noteContainer = document.getElementById('noteContainer');
-      if (noteContainer.style.display === 'block') {
-        noteContainer.style.display = 'none';
-      } else {
-        noteContainer.style.display = 'block';
-      }
-    });
-  </script>
+  <script src="advanced.js" charset="utf-8"></script>
 </body>
 </html>
